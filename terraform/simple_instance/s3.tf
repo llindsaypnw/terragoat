@@ -16,10 +16,10 @@ resource "aws_s3_bucket" "docking_bay" {
     git_repo             = "terragoat"
     yor_trace            = "0d0a21e2-88ca-4940-bdd5-dbfbd6beb7e5"
   }
-  bucket = "docking-bay-storage-20220302200737869700000001"
-  hosted_zone_id = "Z3BJ6K6RIION7M"
-  request_payer = "BucketOwner"
-  server_side_encryption_configuration = {"rule": {"apply_server_side_encryption_by_default": {"sse_algorithm": "AES256"}}}
-  versioning = {"enabled": false, "mfa_delete": false}
+  bucket                               = "docking-bay-storage-20220302200737869700000001"
+  hosted_zone_id                       = "Z3BJ6K6RIION7M"
+  request_payer                        = "BucketOwner"
+  server_side_encryption_configuration = { "rule" : { "apply_server_side_encryption_by_default" : { "sse_algorithm" : "AES256" } } }
+  versioning                           = { "enabled" : false, "mfa_delete" : false }
 }
 
